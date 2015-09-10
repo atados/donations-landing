@@ -1,0 +1,238 @@
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+
+body {
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+.close {
+  color: white;
+  opacity: 1;
+  text-shadow: 0px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  line-height: 13px;
+  text-align: center;
+  &:hover, &:active, &:focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    text-shadow: 0px;
+    opacity: 1;
+  }
+}
+
+.logo {
+  background: url('../images/mandala-branca.png') no-repeat center center / contain;
+  width: 160px;
+  height: 160px;
+  margin: -95px auto 0;
+  transition: 0.4s linear;
+  transition-property: top, width;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  &.small {
+    width: 90px;
+    top: -40px;
+  }
+}
+
+.btn {
+  &.btn-primary {
+    background: rgba(255,255,255,0.5);
+    border: 0px;
+    border-radius: 0px;
+    color: #333;
+    &:active {
+      background: rgba(255,255,255,0.8);
+      color: #333;
+    }
+  }
+
+  &.btn-video-play {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 15px 60px;
+
+    img {
+      position: relative;
+      margin-top: -7px;
+    }
+  }
+}
+
+.navbar-nav {
+  padding: 15px;
+  > li {
+    a {
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: 2px solid white;
+      font-weight: bold;
+      padding: 8px 15px;
+
+      &:hover, &:active {
+        color: white;
+        background: none;
+      }
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+  color: white;
+  background: url('../images/pessoas.jpg') no-repeat center center / cover;
+  padding-bottom: 250px;
+
+  .close {
+    right: -45px;
+    top: -45px;
+    position: relative;
+    display: none;
+  }
+  
+  .container {
+    margin-top: 45px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-top: 90px;
+    font-weight: bold;
+    font-family: $font-secondary;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 32px;
+    font-weight: 300;
+    font-family: $font-primary;
+    margin-bottom: 40px;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  #main-video {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 753px !important;
+    height: 493px !important;
+    z-index: 10;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .4s ease;
+
+    &.open {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+
+
+.stories {
+  margin-top: -430px;
+  padding-top: 500px;
+  padding-bottom: 420px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0570a4+0,0570a4+100&0+0,1+30,1+70,0+100 */
+  background: -moz-linear-gradient(top, rgba(5,112,164,0) 0%, rgba(5,112,164,1) 30%, rgba(5,112,164,1) 70%, rgba(5,112,164,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(5,112,164,0)), color-stop(30%,rgba(5,112,164,1)), color-stop(70%,rgba(5,112,164,1)), color-stop(100%,rgba(5,112,164,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(5,112,164,0) 0%,rgba(5,112,164,1) 30%,rgba(5,112,164,1) 70%,rgba(5,112,164,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(5,112,164,0) 0%,rgba(5,112,164,1) 30%,rgba(5,112,164,1) 70%,rgba(5,112,164,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(5,112,164,0) 0%,rgba(5,112,164,1) 30%,rgba(5,112,164,1) 70%,rgba(5,112,164,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(5,112,164,0) 0%,rgba(5,112,164,1) 30%,rgba(5,112,164,1) 70%,rgba(5,112,164,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000570a4', endColorstr='#000570a4',GradientType=0 ); /* IE6-9 */
+
+  h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-weight: 100;
+    text-align: right;
+
+    b {
+      font-family: $font-secondary;
+      display: block;
+      font-weight: 900;
+    }
+  }
+
+  h3 {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    color: white;
+    font-family: $font-primary;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 30px;
+    li {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      background: red;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.dreams {
+  background: url('../images/maos.jpg') no-repeat center center / cover;
+  padding: 270px 0;
+  z-index: -1;
+  position: relative;
+  margin-top: -430px;
+  text-align: center;
+
+  h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-weight: 100;
+    margin-bottom: 80px;
+
+    b {
+      font-family: $font-secondary;
+      display: block;
+      font-weight: 900;
+    }
+  }
+  p {
+    color: white;
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  img {
+    width: 80%;
+  }
+}
