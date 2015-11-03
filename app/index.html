@@ -27,7 +27,7 @@
     <![endif]-->
 
 
-    <section class="intro">
+    <section id="introducao" class="intro" data-menu-target="video">
       <header class="navbar">
         <ul class="nav navbar-nav">
           <li class="active">
@@ -37,7 +37,7 @@
       </header>
 
       <div class="container">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2 box">
+        <div class="col-xs-12 col-sm-9 col-sm-push-1 col-lg-8 col-lg-push-2 box">
           <div class="logo"></div>
           <object data="images/lines/v1-1.svg" id="v1-1" type="image/svg+xml">
           </object>
@@ -56,54 +56,78 @@
           </video>
 
           <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-            <h1>Lorem Ipsum</h1>
-              <p>Sit fugit labore ab consectetur excepturi, dolorum corrupti illum minima.</p>
-              <button class="btn btn-primary btn-video-play">Ver o vídeo <img src="images/play.png"></button>
+            <div class="col-xs-12 col-sm-10 col-sm-push-1">
+            <h1>Oi, vamos lá!</h1>
+              <p>Nós somos o Atados e, daqui pra frente, vamos te ajudar a compreender porque sua doação pode fazer uma grande diferença =)</p>
+              <button class="btn btn-primary btn-video-play">Comece pelo vídeo <img src="images/play.png"></button>
             </div>
+          </div>
+        </div>
+        <div class="col-sm-2 col-sm-push-1 col-lg-2 col-lg-push-2">
+          <ul class="menu">
+            <li class="active" data-menu="video"><a href="#introducao">Vídeo <div class="bullet"></div></a></li>
+            <li data-menu="stories"><a href="#atados">Atados <div class="bullet"></div></a></li>
+            <li data-menu="dreams"><a href="#sonhos">Sonhos <div class="bullet"></div></a></li>
+            <li data-menu="benefits"><a href="#beneficios">Beneficios <div class="bullet"></div></a></li>
+            <li data-menu="contribute"><a href="#contribuir">Doar <div class="bullet"></div></a></li>
+          </ul>
+          <a href="#" class="help">
+            <div>
+              DOAR
+            </div>
+            <img src="images/maozinha.png">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stories">
+      <div class="container" data-menu-target="stories" id="atados">
+        <object data="images/lines/v2.svg" id="v2" type="image/svg+xml">
+        </object>
+        <div class="col-xs-12 col-sm-6 col-sm-push-">
+          <h2>Para quem<br>Você está<br>Doando?</h2>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <div class="box">
+            <p>Para uma organização que em três anos uniu mais de 38 mil voluntárias(os) e quase 400 organizações sociais em incontáveis ações. Além de ter tirado do papel projetos que geram renda, promovem inclusão, diversidade, empatia...
+Dá uma olhada aqui em alguns desses sonhos que tornamos realidade.</p>
+            <ul>
+              <li style="background: url('images/casamento-agenor-isabel.png') no-repeat center center / cover" data-toggle="tooltip" title="lorem ipsum dolor sit amet, consectur div vivendum aquario" data-placement="bottom"></li>
+              <li style="background: url('images/copa-do-mundo-refugiados.png') no-repeat center center / cover"></li>
+              <li style="background: url('images/feminicidade.png') no-repeat center center / cover"></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-
-
-    <section class="stories">
-      <div class="container">
-        <div class="col-xs-12 col-sm-4 col-sm-push-2">
-          <h2><b>Atados</b> appareat</h2>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-sm-push-2">
-          <h3>Duis altem vel eum</h3>
-          <p>
-            Lorem adipisci quas iste consequatur cumque! Praesentium aliquid voluptas dolorum eius doloremque. Delectus vitae mollitia voluptatum autem eaque! Labore deleniti officiis assumenda quidem harum repellat hic doloribus quos. Error quia!
-          </p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section class="dreams">
-      <div class="container">
+      <div id="sonhos" class="container" data-menu-target="dreams">
+        <object data="images/lines/v3-1.svg" id="v3-1" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v3-2.svg" id="v3-2" type="image/svg+xml">
+        </object>
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-push-2">
             <h2>Nossos <b>Sonhos</b></h2>
             <div class="row">
               <div class="col-xs-12 col-sm-4">
                 <img src="images/grupo.svg" alt="">
-                <p>Ipsum consectetur repudiandae in et magnam nihil harum?</p>
+                <p><b>IMPACTO SOCIAL</b><br>
+                Multiplicar nossa atuação ao lado de um número muito maior de organizações.</p>
               </div>
               <div class="col-xs-12 col-sm-4">
                 <img src="images/expansao.svg" alt="">
-                <p>Amet ullam magni eius veritatis nesciunt ratione et modi autem?</p>
+                <p><b>EXPANSÃO NACIONAL</b><br>
+                Levar o Atados para cada canto do país que precise do nosso trabalho.
+                </p>
               </div>
               <div class="col-xs-12 col-sm-4">
                 <img src="images/dindin.svg" alt="">
-                <p>Ipsum officia incidunt sapiente debitis reprehenderit laborum!</p>
+                <p><b>INOVAÇÃO</b><br>
+                Co-criar novos negócios sociais que gerem impacto nas mais diversas causas.
+                </p>
               </div>
             </div>
           </div>
@@ -111,12 +135,127 @@
       </div>
     </section>
 
+    <section class="for-you">
+      <div id="beneficios" class="container" data-menu-target="benefits">
+        <object data="images/lines/v4-1.svg" id="v4-1" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v4-2.svg" id="v4-2" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v5.svg" id="v5" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v6-1.svg" class="v6-1" id="v6-1-1" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v6-1.svg" class="v6-1" id="v6-1-2" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v6-1.svg" class="v6-1" id="v6-1-3" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v6-2.svg" class="v6-2" id="v6-2-1" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v6-2.svg" class="v6-2" id="v6-2-2" type="image/svg+xml">
+        </object>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <h2>O que<br>você recebe?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-sm-push-7">
+            <h3>PRODUTOS EXCLUSIVOS</h3>
+            <p>Ao longo do período em que você estiver nos apoiando enviaremos alguns produtos exclusivos em agradecimento pela suas doações.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-sm-push-2">
+            <h3>FORMAÇÕES E CONTEÚDOS</h3>
+            <p>Além de conteúdos periódicos e oportunidades de voluntariado, você também receberá convites para aulas abertas e espaços de formação das mais diversas causas.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-sm-push-7">
+            <h3>ABRAÇO CULTURAL (20% OFF)</h3>
+            <p>Desconto válido para qualquer curso do Abraço Cultural, escola de línguas com professoras(es) refugiadas(os).</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-sm-push-2">
+            <h3>PRODUTOS ADERE (10% OFF)</h3>
+            <p>Desconto válido para todos os produtos do catálogo da Adere, ONG que trabalha pela inclusão de pessoas com deficiência intelectual.</p>
+          </div>
+        </div>
+        <div class="row pull">
+          <div class="col-xs-12 col-sm-3 col-sm-push-7">
+            <h3>MOVE INSTITUTE (15% OFF)</h3>
+            <p>Desconto válido para qualquer produto da loja do Move Institute, ONG que trabalha pela proteção animal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contribute">
+      <div id="contribuir" class="container" data-menu-target="contribute">
+        <object data="images/lines/v7-1.svg" class="v7-1" id="v7-1" type="image/svg+xml">
+        </object>
+        <object data="images/lines/v7-2.svg" class="v7-2" id="v7-2" type="image/svg+xml">
+        </object>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2 box">
+            <h2>CHEGOU A HORA!</h2>
+            <p>Agora é só escolher o valor e fazer sua doação mensal =)</p>
+            <div class="choices">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                  <a href="http://atadoslocal.com.br:9000/contribua/30">
+                    <div class="price">
+                      R$<b>30</b>,00
+                    </div>
+                    <p>Com esta doação mensal você ajuda a viabilizar um de nossos sonhos</p>
+                    <div class="icons">
+                      <img src="images/grupo.svg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  <a href="http://atadoslocal.com.br:9000/contribua/60">
+                    <div class="price">
+                      R$<b>60</b>,00
+                    </div>
+                    <p>Com esta doação mensal você ajuda a viabilizar dois de nossos sonhos</p>
+                    <div class="icons">
+                      <img src="images/grupo.svg" alt="">
+                      <img src="images/expansao.svg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  <a href="http://atadoslocal.com.br:9000/contribua/100">
+                    <div class="price">
+                      R$<b>100</b>,00
+                    </div>
+                    <p>Com esta mensal doação você ajuda a viabilizar todos nossos sonhos</p>
+                    <div class="icons">
+                      <img src="images/grupo.svg" alt="">
+                      <img src="images/expansao.svg" alt="">
+                      <img src="images/dindin.svg" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <span>Quero contribuir com <a href="http://www.atadoslocal.com.br:9000/contribua/">outro valor ou fazer uma doação pontual</a></span>
+          <br>
+          <a href="http://www.atadoslocal.com.br:9000/contribua/30" class="btn btn-contribute">Quero <b>contribuir!</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="/bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="/bower_components/video.js/dist/video-js/video.js"></script>
     <script src="/bower_components/vivus/dist/vivus.js"></script>
     <!-- endbower -->

@@ -1,11 +1,102 @@
+object {
+  pointer-events: none;
+}
+
 #v1-1 {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 2;
 }
 
 #v1-2 {
   position: absolute;
   top: 0px;
   right: 0px;
+  z-index: 2;
+}
+
+#v2 {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  right: 0px;
+  margin: auto auto;
+}
+
+#v3-1 {
+  position: absolute;
+  left: 324px;
+  top: -23px;
+  z-index: 2;
+}
+
+#v3-2 {
+  position: absolute;
+  right: 324px;
+  top: -23px;
+  z-index: 2;
+}
+
+#v4-1 {
+  position: absolute;
+  left: 414px;
+  top: 37px;
+  z-index: 2;
+}
+
+#v4-2 {
+  position: absolute;
+  right: 413px;
+  top: 37px;
+  z-index: 2;
+}
+
+#v5 {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  right: 0px;
+  margin: auto auto;
+}
+
+.v6-1 {
+  position: absolute;
+  left: 670px;
+}
+.v6-2 {
+  position: absolute;
+  left: 575px;
+}
+
+#v6-1-1 {
+  top: 610px;
+}
+#v6-1-2 {
+  top: 1065px;
+}
+#v6-1-3 {
+  top: 1460px;
+}
+#v6-2-1 {
+  top: 828px;
+}
+#v6-2-2 {
+  top: 1250px;
+}
+
+#v7-1 {
+  position: absolute;
+  top: 293px;
+  left: 308px;
+  z-index: 2;
+  width: 366px;
+}
+
+#v7-2 {
+  position: absolute;
+  top: 293px;
+  right: 309px;
+  z-index: 2;
+  width: 366px;
 }

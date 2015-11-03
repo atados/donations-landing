@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
+    "gsap": "~1.18.0",
+    "scrollmagic": "~2.0.5",
     "video.js": "~4.12.15",
     "vivus": "~0.2.2"
   },
