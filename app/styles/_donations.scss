@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     text-transform: uppercase;
     font-family: $font-secondary;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 100;
 
     a {
@@ -224,6 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     top: -45px;
     position: relative;
     display: none;
+    z-index: 10;
   }
   
   .container {
@@ -524,6 +525,164 @@ h1, h2, h3, h4, h5, h6 {
        font-weight: bold;
        color: #777;
        text-decoration: underline;
+    }
+  }
+}
+
+.full {
+  display: none;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .for-you {
+    margin-top: -450px;
+    padding-top: 390px
+  }
+  .contribute {
+    background: url('../images/imagem3.jpg') no-repeat center center / cover;
+    padding: 270px 0 100px;
+    position: relative;
+    margin-top: -440px;
+    text-align: center;
+  }
+  .md.full {
+    display: block;
+    pointer-events: none;
+  }
+  .contribute .choices a .price b {
+    font-size: 45px;
+  }
+  .intro {
+    #main-video {
+      top: -13px;
+      left: 25px;
+      width: 579px !important;
+      height: 564px !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .stories {
+    h2 {
+      font-size: 50px;
+    }
+    ul {
+      li {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  .for-you {
+    padding-bottom: 80px;
+    padding-top: 250px;
+    h2 {
+      text-align: left;
+    }
+    br {
+      display: none;
+    }
+  }
+  .contribute {
+    margin-top: -300px;
+  }
+  .intro {
+    #main-video { top: -14px;
+      left: 29px;
+      width: 669px !important;
+      height: 511px !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    padding-bottom: 220px;
+    h1 {
+      font-size: 40px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      top: 60px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .btn.btn-video-play {
+      font-size: 20px;
+      padding: 15px;
+    }
+
+    #main-video {
+      top: 77px;
+      left: 0px;
+      width: 100% !important;
+      height: 511px !important;
+    }
+    .close {
+      right: 0px;
+      top: 28px;
+    }
+  }
+
+  .stories {
+    h2 {
+      font-size: 50px;
+      text-align: center;
+    }
+    ul {
+      li {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  .dreams {
+    padding-bottom: 300px;
+    img {
+      width: 30%
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 50px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .for-you {
+    padding-bottom: 80px;
+    padding-top: 250px;
+    h2 {
+      text-align: left;
+      font-size: 40px;
+    }
+    br {
+      display: none;
+    }
+  }
+
+  .nav.navbar-nav {
+    text-align: left;
+    padding: 15px;
+    display: block;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  .contribute {
+    margin-top: -280px;
+    .row {
+      margin: 0 0;
+    }
+    .btn.btn-contribute {
+      font-size: 20px;
     }
   }
 }

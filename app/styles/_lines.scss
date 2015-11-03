@@ -18,7 +18,7 @@ object {
 
 #v2 {
   position: absolute;
-  top: -30px;
+  top: -7px;
   left: 0px;
   right: 0px;
   margin: auto auto;
@@ -99,4 +99,49 @@ object {
   right: 309px;
   z-index: 2;
   width: 366px;
+}
+
+.full-lines {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  object:not(.full) {
+    display: none;
+  }
+  .full-lines {
+    display: none;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .full-lines {
+    display: block;
+  }
+  #md {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 174px;
+    z-index: 100;
+    pointer-events: none;
+    width: 64%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .full-lines {
+    display: block;
+  }
+  #sm {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 17px;
+    z-index: 100;
+    pointer-events: none;
+    width: 95.5%;
+  }
 }

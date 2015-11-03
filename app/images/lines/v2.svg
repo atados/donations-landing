@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="svg4161" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="187.96mm" viewBox="0 0 2.9978498 665.98384" width=".84605mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
- <g id="layer1" transform="matrix(.81673 0 0 .81796 142.09 -77.418)">
-  <path id="path4150" d="m-172.14 155.86v753" stroke="#fff7f7" stroke-width="3.6705" fill="none"/>
+<svg id="svg4161" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="666" viewBox="0 0 2.9978498 665.98384" width="2.9978" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g id="layer1" transform="matrix(.81673 0 0 .81796 142.09 -77.418)" stroke="#fff" stroke-width="3.6705">
+  <path id="path4150" d="m-172.14 94.633v814.23" stroke="#fff" stroke-width="3.6705" fill="none"/>
  </g>
- <g id="g4156" transform="matrix(.88313 0 0 .88446 153.52 -137.86)">
-  <path id="path4158" d="m-172.14 155.86v753" stroke="#fff7f7" stroke-width="3.3944" fill="none"/>
- </g>
+ <path id="path4158" d="m1.498 300v365.99" stroke="#fff" stroke-width="3" fill="none"/>
 </svg>
