@@ -385,7 +385,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss',
-      'browserSync:livereload',
+      //'browserSync:livereload',
       'watch'
     ]);
   });
