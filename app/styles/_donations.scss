@@ -233,7 +233,8 @@ h1, h2, h3, h4, h5, h6 {
 
   h1 {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 50px;
+    padding-bottom: 10px;
     margin-top: 90px;
     font-weight: bold;
     font-family: $font-secondary;
@@ -288,12 +289,13 @@ h1, h2, h3, h4, h5, h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000570a4', endColorstr='#000570a4',GradientType=0 ); /* IE6-9 */
 
   h2 {
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
     font-family: $font-secondary;
     font-weight: 100;
     text-align: right;
     padding-right: 25px;
+    padding-bottom: 10px;
     margin-top: 0px;
 
     b {
@@ -350,9 +352,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   h2 {
-    font-size: 70px;
+    font-size: 50px;
+    padding-bottom: 10px;
     text-transform: uppercase;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: 100;
     margin-bottom: 80px;
 
@@ -404,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
     font-family: $font-secondary;
     font-weight: 100;
@@ -464,7 +467,7 @@ h1, h2, h3, h4, h5, h6 {
      text-transform: uppercase;
      font-family: $font-secondary;
      font-weight: bold;
-     font-size: 60px;
+     font-size: 50px;
   }
 
   p {
@@ -703,5 +706,17 @@ h1, h2, h3, h4, h5, h6 {
     .btn.btn-contribute {
       font-size: 20px;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    -webkit-padding-before: 32px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .box {
+    -webkit-padding-before: 40px;
   }
 }

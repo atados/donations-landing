@@ -20,6 +20,7 @@ $(document).ready(function() {
     2: function() {
     },
     3: function() {
+      $('.help').fadeIn().css("display","inline-block");;
     },
     4: function() {
       $('.help').fadeOut();
