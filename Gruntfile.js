@@ -57,28 +57,28 @@ module.exports = function (grunt) {
       }
     },
 
-    //browserSync: {
-    //options: {
-    //  notify: false,
-    //  background: true
-    //},
-    //livereload: {
-    //  options: {
-    //    files: [
-    //      '<%= config.app %>/{,*/}*.html',
-    //      '.tmp/styles/{,*/}*.css',
-    //      '<%= config.app %>/images/{,*/}*',
-    //      '.tmp/scripts/{,*/}*.js'
-    //    ],
-    //    port: 9500,
-    //    server: {
-    //      baseDir: ['.tmp', config.app],
-    //      routes: {
-    //        '/bower_components': './bower_components'
-    //      }
-    //    }
-    //  }
-    //},
+      browserSync: {
+      options: {
+        notify: false,
+        background: true
+      },
+      livereload: {
+        options: {
+          files: [
+            '<%= config.app %>/{,*/}*.html',
+            '.tmp/styles/{,*/}*.css',
+            '<%= config.app %>/images/{,*/}*',
+            '.tmp/scripts/{,*/}*.js'
+          ],
+          port: 9500,
+          server: {
+            baseDir: ['.tmp', config.app],
+            routes: {
+              '/bower_components': './bower_components'
+            }
+          }
+        }
+      },
       test: {
         options: {
           port: 9501,
