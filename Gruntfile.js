@@ -57,28 +57,28 @@ module.exports = function (grunt) {
       }
     },
 
-    browserSync: {
-      options: {
-        notify: false,
-        background: true
-      },
-      livereload: {
-        options: {
-          files: [
-            '<%= config.app %>/{,*/}*.html',
-            '.tmp/styles/{,*/}*.css',
-            '<%= config.app %>/images/{,*/}*',
-            '.tmp/scripts/{,*/}*.js'
-          ],
-          port: 9500,
-          server: {
-            baseDir: ['.tmp', config.app],
-            routes: {
-              '/bower_components': './bower_components'
-            }
-          }
-        }
-      },
+    //browserSync: {
+    //options: {
+    //  notify: false,
+    //  background: true
+    //},
+    //livereload: {
+    //  options: {
+    //    files: [
+    //      '<%= config.app %>/{,*/}*.html',
+    //      '.tmp/styles/{,*/}*.css',
+    //      '<%= config.app %>/images/{,*/}*',
+    //      '.tmp/scripts/{,*/}*.js'
+    //    ],
+    //    port: 9500,
+    //    server: {
+    //      baseDir: ['.tmp', config.app],
+    //      routes: {
+    //        '/bower_components': './bower_components'
+    //      }
+    //    }
+    //  }
+    //},
       test: {
         options: {
           port: 9501,
@@ -377,7 +377,7 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
     if (target === 'dist') {
-      return grunt.task.run(['build', 'browserSync:dist']);
+      return grunt.task.run(['build']);
     }
 
     grunt.task.run([
@@ -405,7 +405,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'browserSync:test',
+      //'browserSync:test',
       'mocha'
     ]);
   });
