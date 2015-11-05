@@ -57,7 +57,7 @@ module.exports = function (grunt) {
       }
     },
 
-      browserSync: {
+    browserSync: {
       options: {
         notify: false,
         background: true
@@ -95,7 +95,6 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          port: 9500,
           background: false,
           server: '<%= config.dist %>'
         }
@@ -377,7 +376,7 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
     if (target === 'dist') {
-      return grunt.task.run(['build']);
+      return grunt.task.run(['build', 'browserSync:dist']);
     }
 
     grunt.task.run([
@@ -385,7 +384,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss',
-      //'browserSync:livereload',
+      'browserSync:livereload',
       'watch'
     ]);
   });
@@ -405,7 +404,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      //'browserSync:test',
+      'browserSync:test',
       'mocha'
     ]);
   });
