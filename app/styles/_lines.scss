@@ -106,13 +106,12 @@ object {
   display: none;
 }
 
-@media (max-width: 1199px) {
-  object:not(.full) {
-    display: none;
-  }
-  .full-lines {
-    display: none;
-  }
+
+object:not(.full) {
+  display: none;
+}
+.full-lines {
+  display: none;
 }
 
 
@@ -143,5 +142,20 @@ object {
     z-index: 100;
     pointer-events: none;
     width: 95.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .full-lines {
+    display: block;
+  }
+  #lg {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 210px;
+    z-index: 100;
+    pointer-events: none;
+    width: 64.3%;
   }
 }

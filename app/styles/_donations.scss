@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   &.btn-video-play {
     font-family: $font-secondary;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
     padding: 15px 60px;
 
     img {
@@ -178,18 +178,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &.btn-contribute {
-    background: #E27F2E;
-    font-size: 30px;
+    background: #EC0C79;
+    font-size: 24px;
     font-family: $font-secondary;
     text-transform: uppercase;
     color: white;
-    padding: 20px 60px;
+    padding: 20px 40px;
     font-weight: 100;
     margin-top: 40px;
     transition: 0.1s ease-in all;
     
     &:hover {
-      background: #C46E28
+      background: #CC0A69;
     }
   }
 }
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   p {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 300;
     font-family: $font-primary;
     margin-bottom: 40px;
@@ -253,10 +253,10 @@ h1, h2, h3, h4, h5, h6 {
 
   #main-video {
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 753px !important;
-    height: 493px !important;
+    top: -12px;
+    left: 7px;
+    width: 748px !important;
+    height: 468px !important;
     z-index: 10;
     transform: scale(0);
     opacity: 0;
@@ -288,15 +288,15 @@ h1, h2, h3, h4, h5, h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000570a4', endColorstr='#000570a4',GradientType=0 ); /* IE6-9 */
 
   h2 {
-    font-size: 70px;
+    font-size: 60px;
     text-transform: uppercase;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: 100;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 25px;
+    margin-top: 0px;
 
     b {
-      font-family: $font-secondary;
       display: block;
       font-weight: 900;
     }
@@ -314,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-primary;
     font-size: 18px;
     font-weight: 100;
+    margin-top: 6px;
   }
 
   ul {
@@ -365,11 +366,17 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: $font-primary;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 15px;
   }
   img {
     width: 80%;
+  }
+  p {
+    b {
+      display: block;
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -397,11 +404,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   h2 {
-    font-size: 70px;
+    font-size: 60px;
     text-transform: uppercase;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: 100;
     text-align: right;
+    padding-right: 25px;
 
     b {
       font-family: $font-secondary;
@@ -413,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   h3 {
     font-family: $font-secondary;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-align: left;
   }
@@ -424,6 +432,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 100;
     text-align: left;
+  }
+  .col-md-push-2 {
+    h3, p {
+      text-align: right !important;
+    }
   }
 
   .pull {
@@ -451,12 +464,12 @@ h1, h2, h3, h4, h5, h6 {
      text-transform: uppercase;
      font-family: $font-secondary;
      font-weight: bold;
-     font-size: 42px;
+     font-size: 60px;
   }
 
   p {
      font-family: $font-primary;
-     font-size: 18px;
+     font-size: 16px;
      margin-bottom: 25px;
   }
 
@@ -500,6 +513,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
         color: white;
         margin-bottom: 15px;
+
+        @media (max-width: 767px) {
+          br {
+            display: none;
+          }
+        }
       }
 
       .icons {
