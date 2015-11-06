@@ -50,10 +50,14 @@ function setupVideoPlayer() {
     var player = this;
 
     $('.btn-video-play').click(function() {
-      $('#main-video').addClass('open');
-      $('.logo').addClass('small');
-      $('.intro .close').fadeIn();
-      player.play();
+      if ($(window).width > 991) {
+        $('#main-video').addClass('open');
+        $('.logo').addClass('small');
+        $('.intro .close').fadeIn();
+        player.play();
+      } else {
+        window.open('https://www.youtube.com/watch?v=KQKBRoY17q0', '_blank');
+      }
     });
 
     $('.intro .close').click(function() {
